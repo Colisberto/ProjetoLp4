@@ -1,0 +1,55 @@
+<!--
+     Colisberto
+  HTML da tela a ser gerada com os campos com opçoes
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Cadastro de Perguntas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <form (ngSubmit)="salvar()">
+    <ion-item>
+      <ion-label stacked>Pergunta: </ion-label>
+      <ion-input [(ngModel)]="pergunta.descricao" pergunta="pergunta"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Opção A: </ion-label>
+      <ion-input [(ngModel)]="pergunta.opcao_a" opcao="opcao_a"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Opção B: </ion-label>
+      <ion-input [(ngModel)]="pergunta.opcao_b" opcao="opcao_b"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Opção C: </ion-label>
+      <ion-input [(ngModel)]="pergunta.opcao_c" opcao="opcao_c"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Opção D: </ion-label>
+      <ion-input [(ngModel)]="pergunta.opcao_d" opcao="opcao_d"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Opção E: </ion-label>
+      <ion-input [(ngModel)]="pergunta.opcao_e" opcao="opcao_e"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label stacked>Categoria: </ion-label>
+      <ion-input [(ngModel)]="pergunta.categoria" categoria="categoria" clearInput></ion-input>
+    </ion-item>
+    
+    <div text-center margin-top>
+      <button ion-button color="secondary">Salvar</button>
+    </div>
+  </form>
+</ion-content>
